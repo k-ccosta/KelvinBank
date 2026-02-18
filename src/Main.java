@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -14,5 +16,7 @@ public class Main {
                 """.formatted(name, accountType, balance);
 
         System.out.println(welcome);
+        MainMenu menuService = new MainMenu();
+        menuService.showMenu(balance);
     }
 }
